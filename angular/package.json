@@ -30,6 +30,7 @@
   "scripts": {
     "prepare": "npm run build",
     "prepack": "mv dist/* .",
+    "postpublish": "git stash --include-untracked",
     "build": "npm run clean && npm run build.ng && npm run build.core && npm run clean-generated",
     "build.core": "node scripts/build-core.js",
     "build.fesm": "rollup --config ./scripts/rollup.config.js",
