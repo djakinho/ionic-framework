@@ -22,6 +22,16 @@
   "bugs": {
     "url": "https://github.com/ionic-team/ionic/issues"
   },
+  "schematics": "./dist/schematics/collection.json",
+  "main": "./dist/bundles/ionic-angular.umd.js",
+  "module": "./dist/fesm5/ionic-angular.js",
+  "es2015": "./dist/fesm2015/ionic-angular.js",
+  "esm5": "./dist/esm5/ionic-angular.js",
+  "esm2015": "./dist/esm2015/ionic-angular.js",
+  "fesm5": "./dist/fesm5/ionic-angular.js",
+  "fesm2015": "./dist/fesm2015/ionic-angular.js",
+  "typings": "./dist/ionic-angular.d.ts",
+  "metadata": "./dist/ionic-angular.metadata.json",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "prepare": "npm run build",
