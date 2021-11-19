@@ -13,14 +13,6 @@ function copyIonicons() {
   fs.copySync(src, dst);
 }
 
-function copyCSS() {
-  const src = path.join(__dirname, '..', '..', 'core', 'css');
-  const dst = path.join(__dirname, '..','dist', 'css');
-
-  fs.removeSync(dst);
-  fs.copySync(src, dst);
-}
-
 function buildSchematics(){
   return new Promise((resolve, reject) => {
     const cmd = 'tsc';
@@ -58,6 +50,5 @@ function copySchematicsJson(){
 }
 
 copyIonicons();
-copyCSS();
 buildSchematics();
 copySchematicsJson()
