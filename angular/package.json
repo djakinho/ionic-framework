@@ -29,7 +29,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "prepare": "npm run build",
-    "prepack": "mv dist/* .",
+    "prepack": "mv -f dist/* .",
     "build": "npm run clean && npm run build.ng && npm run build.core && npm run clean-generated",
     "build.core": "node scripts/build-core.js",
     "build.fesm": "rollup --config ./scripts/rollup.config.js",
